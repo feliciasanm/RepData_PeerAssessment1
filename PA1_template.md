@@ -8,7 +8,8 @@ output:
 
 ## Background
 
-The data set used here comes from an activity monitoring device. The device collected the number of steps taken by an anonymous individual, recording in 5-minute intervals each day between October-November 2012.
+The data set used here comes from an activity monitoring device. The device collected the number of steps taken by an anonymous individual, recording in 5-minute intervals each day between October-November 2012. The data set will be processed and analyzed here.
+
 
 ## Loading and preprocessing the data
 
@@ -501,6 +502,7 @@ newdata <- newdata %>%
             mutate(day = as.factor(if_else(day %in% c("Sat", "Sun"),
                                  "weekend", "weekday")))
 ```
+
 
 ### Make a time series panel plot
 
